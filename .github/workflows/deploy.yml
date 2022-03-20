@@ -21,8 +21,6 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.OS }}-npm-cache
-          restore-keys: |  
-          ${{ runner.OS }}-npm-cache
 
       - name: Install Dependencies
         run: npm install
